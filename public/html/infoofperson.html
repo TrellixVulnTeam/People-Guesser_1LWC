@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Write the info</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+</head>
+
+<body>
+    <a href="/">
+        <div class="back">
+            <p class="para">Back</p>
+        </div>
+    </a>
+    <br />
+    <form action="/addperson/add" method="POST">
+        <h1 class="title1">Info</h1>
+        <div class="center">
+            <label class="para" for="fname">First Name</label><br />
+            <input class="textinput" type="text" name="fname" />
+            <br /><br />
+            <label class="para" for="lname">Last Name</label><br />
+            <input class="textinput" type="text" name="lname" />
+            <br /><br />
+            <label class="para" for="age">Age</label> <br />
+            <input class="textinput" type="text" name="age" />
+            <br /><br />
+            <label class="para" for="desc">Description</label> <br />
+            <input class="textinput" type="text" name="desc" />
+            <br /><br />
+            <input class="checkbutton" type="submit" value="Submit" />
+        </div>
+    </form>
+</body>
+
+</html>

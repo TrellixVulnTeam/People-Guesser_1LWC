@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play the game</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <script src="../js/game.js"></script>
+</head>
+
+<body>
+    <a href="/play">
+        <div class="back">
+            <p class="para">Back</p>
+        </div>
+    </a>
+    <br />
+    <h1 class="title1">Guess the person</h1>
+    <p id="descShow" class="title2">Loading...</p>
+    <div class="center">
+        <label class="para" for="fname">What is their first name?</label>
+        <input class="textinput" type="text" name="fname" id="fname" /><br />
+    </div>
+    <div class="center">
+        <label class="para" for="lname">What is their last name?</label>
+        <input class="textinput" type="text" name="lname" id="lname" /><br /><br />
+    </div>
+    <p id="isRight" class="para">Check to see if you're right</p>
+    <div class="center">
+        <button class="checkbutton" onclick="check()">Check</button>
+    </div>
+    <div class="center">
+        <button class="checkbutton" onclick="getHint()">Hint</button>
+        <p class="para" id="hint"></p>
+    </div>
+    <a href="/play/play">
+        <div class="box">
+            <p class="para">Get a new person</p>
+        </div>
+    </a>
+</body>
+
+</html>
