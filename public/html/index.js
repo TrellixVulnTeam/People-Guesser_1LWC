@@ -1,7 +1,7 @@
 var express = require('express');
 var path = require('path');
 var logger = require('morgan');
-var db = require('./models/data-model')
+var db = require('../../models/data-model')
 
 var app = express();
 
