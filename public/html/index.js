@@ -13,33 +13,33 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
 app.get('/', (req, res) => {
-    res.status(200).sendFile(path.join(__dirname, './public/html/index.html'))
+    res.status(200).sendFile(path.join(__dirname, './index.html'))
 })
 
 app.get('/addperson/info', (req, res) => {
-    res.status(200).sendFile(path.join(__dirname, './public/html/infoofperson.html'))
+    res.status(200).sendFile(path.join(__dirname, './infoofperson.html'))
 })
 
 app.get('/addperson/added', (req, res) => {
-    res.status(200).sendFile(path.join(__dirname, './public/html/personadded.html'))
+    res.status(200).sendFile(path.join(__dirname, './personadded.html'))
 })
 
 app.get('/inprogress', (req, res) => {
-    res.status(200).sendFile(path.join(__dirname, './public/html/inprogress.html'))
+    res.status(200).sendFile(path.join(__dirname, './inprogress.html'))
 })
 
 app.post('/addperson/add', (req, res) => {
     db.insertPerson(req.body.fname, req.body.lname, req.body.age, req.body.desc)
-    res.status(200).sendFile(path.join(__dirname, './public/html/personadded.html'))
+    res.status(200).sendFile(path.join(__dirname, './personadded.html'))
 })
 
 app.get('/play', (req, res) => {
-    res.status(200).sendFile(path.join(__dirname, './public/html/playmenu.html'))
+    res.status(200).sendFile(path.join(__dirname, './playmenu.html'))
 })
 
 app.get('/play/play', (req, res) => {
     db.getInfo()
-    res.status(200).sendFile(path.join(__dirname, './public/html/play.html'))
+    res.status(200).sendFile(path.join(__dirname, './play.html'))
 })
 
 app.get('/favicon.ico', (req, res) => {
